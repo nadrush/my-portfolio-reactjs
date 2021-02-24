@@ -1,15 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap');
 
-body, html {
-  height: 100%;
-  /* background-image: url(./assets/images/bg.jpg); */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.bg {
-  /* background-image: url(); */
-  
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* DAFTAR ISI 
+
+  BAB 1. NAVBAR
+  BAB 2. SECTION 1 (HOME)
+
+*/
+
+/* BAB 1. NAVBAR */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgb(61, 60, 60);
+}
+
+.notMobile {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar .notMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: antiquewhite;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.navbar .navbar-ul li {
+  list-style: none;
+  display: inline-block;
+  /* margin-right: 3%; */
+}
+
+.navbar .navbar-ul li a {
+  color: antiquewhite;
 }
